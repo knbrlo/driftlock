@@ -1,0 +1,3 @@
+{"id": "refund-order", "input": "I want a refund for order 4021", "must_contain": ["4021"], "must_not_contain": ["$"], "note": "Repeats the order number back. Never invents a dollar amount"}
+{"id": "no-tracking", "input": "Where is my package?", "must_contain": ["tracking"], "must_not_contain": ["arrived", "delivered"], "note": "Asks for a tracking number. Doesn't claim to know the status."}
+{"id": "error-code", "input": "I'm getting ERR_CONN_4021 on retry", "must_contain": ["ERR_CONN_4021"], "must_not_contain": [], "note": "Names the exact error code back."}
